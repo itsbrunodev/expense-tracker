@@ -1,4 +1,3 @@
-/* import { GeistSans as regular } from "geist/font/sans"; */
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
@@ -8,11 +7,11 @@ import { ClientProviders } from "@/components/client-providers";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import "./globals.css";
 
-/* const regular = Lexend({ subsets: ["latin"] }); */
-/* const regular = GeistSans({ subsets: ["latin"] }); */
 const regular = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -73,6 +72,8 @@ export default async function RootLayout({
             </ThemeProvider>
           </ClientProviders>
         </NextIntlClientProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
