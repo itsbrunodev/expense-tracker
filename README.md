@@ -18,6 +18,7 @@ The demo can be found at [expense-tracker.itsbruno.dev](https://expense-tracker.
 #### Localization
 
 - [ ] Add missing locale keys to German and Spanish
+- [ ] Add missing translations
 - [ ] Properly organize locale keys
 
 #### Pages
@@ -35,3 +36,4 @@ The demo can be found at [expense-tracker.itsbruno.dev](https://expense-tracker.
 - [ ] Rewrite parts of the code that aren't readable and efficient
 - [ ] Fix potential bugs
 - [ ] Remove unnecessary packages
+- [ ] Responsive design
