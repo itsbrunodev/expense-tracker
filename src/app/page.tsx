@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer";
 import { ShowcaseImage } from "@/components/landing/showcase-image";
 import { Navbar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
+import { FEATURES } from "@/lib/constants";
 
 export default async function Page() {
   const t = await getTranslations();
@@ -33,7 +34,7 @@ export default async function Page() {
         </p>
         <Button className="h-fit px-4 py-2" asChild>
           <Link href="/login">
-            {t('landing.cta')}{" "}
+            {t("landing.cta")}{" "}
             <ArrowRightIcon
               className="my-auto ml-2 inline-block size-3.5"
               strokeWidth={2}
@@ -42,74 +43,51 @@ export default async function Page() {
         </Button>
       </div>
       <ShowcaseImage />
+      <div className="mx-auto mt-24 flex max-w-5xl flex-col gap-12">
+        <h2 className="text-center text-3xl font-medium">
+          Everything you need for your financial journey
+        </h2>
+        <div className="grid grid-cols-3 gap-12">
+          {FEATURES.map((feature, i) => (
+            <div
+              className="group flex flex-col items-start justify-start gap-2 transition-all"
+              key={i}
+            >
+              <div className="flex h-14 items-center gap-2">
+                <div className="rounded-md bg-gradient-to-b from-zinc-50 to-zinc-50/20 p-2.5 text-zinc-800 group-hover:from-green-100 group-hover:to-green-100/20 group-hover:text-green-800 dark:from-zinc-800 dark:to-zinc-800/20 dark:text-zinc-100 group-hover:dark:from-green-800 group-hover:dark:to-green-800/20 group-hover:dark:text-green-200">
+                  <feature.icon className="size-8" strokeWidth={1} />
+                </div>
+                <h3 className="text-lg font-medium text-zinc-800 dark:text-zinc-50">
+                  {t(feature.title)}
+                </h3>
+              </div>
+              <p className="text-sm text-zinc-800 dark:text-zinc-50">
+                {t(feature.description)}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="mx-auto mt-24 max-w-5xl">
+        <div className="flex h-72 w-full flex-col items-center justify-center gap-6 rounded-2xl bg-gradient-to-b from-green-400 to-green-600 text-center dark:from-green-700 dark:to-green-900">
+          <h1 className="text-4xl font-bold">{t("landing.ready")}</h1>
+          <div className="flex max-w-[550px] flex-col items-center justify-center gap-3">
+            <p className="text-lg text-zinc-800 dark:text-zinc-50">
+              {t("landing.subheading")}
+            </p>
+            <Button className="h-fit px-4 py-2" asChild>
+              <Link href="/login">
+                {t("landing.cta")}{" "}
+                <ArrowRightIcon
+                  className="my-auto ml-2 inline-block size-3.5"
+                  strokeWidth={2}
+                />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </div>
       <Footer className="max-w-5xl" />
     </div>
   );
 }
-
-/* <div className="mx-auto mt-12 grid w-full max-w-5xl grid-cols-3 grid-rows-2 gap-2">
-        <div className="col-span-2 flex size-full items-center justify-between rounded-xl border border-zinc-100 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800">
-          <div className="w-1/2 space-y-4 p-8">
-            <h1 className="text-2xl font-semibold">
-              Comprehensive Expense Tracking
-            </h1>
-            <p className="text-sm leading-relaxed text-zinc-800 dark:text-zinc-50">
-              Keep track of all your expenses in one place. Categorize your
-              spending, set budgets, and gain insights into your financial
-              habits.
-            </p>
-          </div>
-          <Image
-            className="aspect-square h-full w-1/2 pr-8"
-            src={
-              resolvedTheme === "light" ? FinanceGrowthLight : FinanceGrowthDark
-            }
-            alt="Finance Growth"
-            width={500}
-            height={500}
-            draggable={false}
-          />
-        </div>
-        <div className="row-span-2 flex flex-col justify-center rounded-xl border border-zinc-100 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800">
-          <Image
-            className="my-auto p-6"
-            src={
-              resolvedTheme === "light"
-                ? KeynotePresentationLight
-                : KeynotePresentationDark
-            }
-            alt="Keynote Presentation"
-            width={500}
-            height={500}
-            draggable={false}
-          />
-          <div className="mt-auto space-y-4 p-8">
-            <h1 className="text-2xl font-semibold">
-              Detailed Financial Statistics
-            </h1>
-            <p className="text-sm leading-relaxed text-zinc-800 dark:text-zinc-50">
-              Get detailed monthly summaries of your balance, income, expenses,
-              investments, and savings. Visualize your financial health with
-              intuitive charts and graphs.
-            </p>
-          </div>
-        </div>
-        <div className="col-span-2 flex size-full items-center justify-between rounded-xl border border-zinc-100 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800">
-          <div className="w-1/2 space-y-4 p-8">
-            <h1 className="text-2xl font-semibold">Goal-Oriented Savings</h1>
-            <p className="text-sm leading-relaxed text-zinc-800 dark:text-zinc-50">
-              Set and achieve your savings goals effortlessly. Track your
-              progress, automate your savings, and stay motivated with
-              personalized tips.
-            </p>
-          </div>
-          <Image
-            className="h-10/12 w-1/2 self-center pr-8"
-            src={resolvedTheme === "light" ? RichLight : RichDark}
-            alt="Rich"
-            width={500}
-            height={500}
-            draggable={false}
-          />
-        </div>
-      </div> */
