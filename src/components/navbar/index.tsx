@@ -30,13 +30,13 @@ export function Navbar({
   return (
     <div
       className={cn(
-        "mx-auto w-full max-w-4xl px-4 xl:px-0",
+        "mx-auto mb-10 w-full max-w-4xl px-4 xl:px-0",
         setup && "absolute left-0 right-0 top-0",
         className
       )}
     >
-      <nav className="relative mb-10 flex items-center justify-between py-8">
-        <Link className="transition-opacity hover:opacity-80" href="/home">
+      <nav className="relative flex items-center justify-between py-8">
+        <Link className="transition-opacity hover:opacity-80" href="/">
           <Logo className="size-10" />
         </Link>
         {!setup && <Routes />}
