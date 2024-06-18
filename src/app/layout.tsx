@@ -3,8 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { Inter } from "next/font/google";
 
-import { ClientProviders } from "@/components/client-providers";
-import { ThemeProvider } from "@/components/theme/theme-provider";
+import { Providers } from "@/components/providers";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/react";
@@ -54,23 +53,15 @@ export default async function RootLayout({
         )}
       >
         <NextIntlClientProvider messages={messages}>
-          <ClientProviders>
-            <ThemeProvider
-              attribute="class"
-              defaultTheme="system"
-              enableSystem
-              disableTransitionOnChange
+          <Providers>
+            <Toaster />
+            <div
+              className="relative h-full min-h-full overflow-hidden"
+              vaul-drawer-wrapper=""
             >
-              <Toaster />
-              <div
-                className="relative h-full min-h-full overflow-hidden"
-                vaul-drawer-wrapper=""
-              >
-                {children}
-                {/* <ThemeToggle /> */}
-              </div>
-            </ThemeProvider>
-          </ClientProviders>
+              {children}
+            </div>
+          </Providers>
         </NextIntlClientProvider>
         <Analytics />
         <SpeedInsights />
