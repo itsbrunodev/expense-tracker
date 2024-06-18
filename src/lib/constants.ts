@@ -1,4 +1,14 @@
-import { HomeIcon, LineChartIcon, PiggyBankIcon } from "lucide-react";
+import {
+  BadgeDollarSignIcon,
+  BarChart3Icon,
+  FingerprintIcon,
+  HomeIcon,
+  LineChartIcon,
+  PiggyBankIcon,
+  ScrollTextIcon,
+  TagIcon,
+  VaultIcon,
+} from "lucide-react";
 import { ExternalToast } from "sonner";
 
 export const TITLE_CHAR_LIMIT = 20 as const;
@@ -8,11 +18,44 @@ export const DESCRIPTION_CHAR_LIMIT = 200 as const;
 export const TIMEFRAME_FORMAT = "yyyy-MM" as const;
 export const TIMEFRAME_KEY = "t" as const;
 
-export const locales = [
+export const LOCALES = [
   { locale: "en", flag: "uk" },
   { locale: "de", flag: "de" },
   { locale: "es", flag: "es" },
   { locale: "hu", flag: "hu" },
+] as const;
+
+export const FEATURES = [
+  {
+    title: "features.comprehensive.title",
+    description: "features.comprehensive.description",
+    icon: ScrollTextIcon,
+  },
+  {
+    title: "features.detailed.title",
+    description: "features.detailed.description",
+    icon: BarChart3Icon,
+  },
+  {
+    title: "features.goal.title",
+    description: "features.goal.description",
+    icon: VaultIcon,
+  },
+  {
+    title: "features.customizable.title",
+    description: "features.customizable.description",
+    icon: TagIcon,
+  },
+  {
+    title: "features.multi.title",
+    description: "features.multi.description",
+    icon: BadgeDollarSignIcon,
+  },
+  {
+    title: "features.secure.title",
+    description: "features.secure.description",
+    icon: FingerprintIcon,
+  },
 ] as const;
 
 export const SETUP_STEPS = [
