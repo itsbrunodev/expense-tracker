@@ -1,4 +1,9 @@
-import { LogOutIcon, SettingsIcon, UserRoundIcon } from "lucide-react";
+import {
+  AlignRightIcon,
+  LogOutIcon,
+  SettingsIcon,
+  UserRoundIcon,
+} from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
@@ -10,6 +15,7 @@ import LocaleSwitcher from "../locale/locale-switcher";
 import { Logo } from "../logo";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
+import { Drawer, DrawerContent, DrawerTrigger } from "../ui/drawer";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,7 +24,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
-import { Routes } from "./routes";
+import { RoutesHorizontal, RoutesVertical } from "./routes";
 
 export function Navbar({
   className,
@@ -39,11 +45,27 @@ export function Navbar({
         <Link className="transition-opacity hover:opacity-80" href="/">
           <Logo className="size-10" />
         </Link>
-        {!setup && <Routes />}
-        <div className="flex items-center gap-4">
+        {!setup && <RoutesHorizontal />}
+        <div className="hidden items-center gap-4 md:flex">
           <LocaleSwitcher />
           {!setup && <NavbarUser />}
         </div>
+        <Drawer shouldScaleBackground setBackgroundColorOnScale={false}>
+          <DrawerTrigger asChild>
+            <Button className="md:hidden" variant="ghost" size="icon">
+              <AlignRightIcon />
+            </Button>
+          </DrawerTrigger>
+          <DrawerContent>
+            <div className="p-6">
+              <RoutesVertical />
+              <div className="mt-8 flex items-center justify-end gap-4">
+                <LocaleSwitcher />
+                {!setup && <NavbarUser />}
+              </div>
+            </div>
+          </DrawerContent>
+        </Drawer>
       </nav>
     </div>
   );
