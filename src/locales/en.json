@@ -1,6 +1,6 @@
 {
   "summary": "Summary",
-  "locale": "{locale, select, en {English} es {Spanish} de {German} hu {Magyar} other {Unknown}}",
+  "locale": "{locale, select, en {English} es {Spanish} de {German} hu {Hungarian} other {Unknown}}",
   "transactions": "Transactions",
   "my-profile": "My Profile",
   "settings": "Settings",
