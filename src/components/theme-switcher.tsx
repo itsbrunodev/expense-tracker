@@ -2,14 +2,21 @@
 
 import { MonitorIcon, MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
-import { Button } from "../ui/button";
+import { Button } from "./ui/button";
 
-export function ThemeToggle() {
-  const { setTheme, theme } = useTheme();
+export function ThemeSwitcher() {
+  const { theme, setTheme } = useTheme();
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
-    <div className="flex gap-1.5">
+    <div className="flex gap-1.5" key={String(isMounted)}>
       <Button
         className="size-fit rounded-full border p-1.5"
         variant={theme === "dark" ? "default" : "outline"}
