@@ -9,8 +9,8 @@ import Link from "next/link";
 export default function Page() {
   return (
     <div className="h-full w-full">
-      <Navbar className="max-w-5xl" />
-      <div className="mx-auto flex min-h-[425px] w-full max-w-5xl flex-col items-center justify-center gap-8 text-center">
+      <Navbar className="max-w-5xl mb-0" />
+      <div className="mx-auto flex min-h-[475px] w-full max-w-5xl flex-col items-center justify-center gap-8 text-center">
         <h1 className="max-w-3xl text-5xl font-semibold leading-tight">
           <span className="bg-gradient-to-b from-zinc-500 to-zinc-900 bg-clip-text text-transparent dark:from-white dark:to-zinc-300">
             Take Charge of Your Finances with{" "}
