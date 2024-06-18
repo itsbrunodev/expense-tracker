@@ -91,5 +91,37 @@
   "login-continue": "Melden Sie sich bei Ihrem Konto an, um fortzufahren",
   "login-github": "Fahren Sie mit GitHub fort",
   "warning": "Warnung",
-  "warning-description": "An diesem Projekt wird noch aktiv gearbeitet und es ist noch nicht vollständig produktionsreif. \nErwarten Sie <b>Fehler</b> und <b>fehlende Funktionen</b>."
+  "warning-description": "An diesem Projekt wird noch aktiv gearbeitet und es ist noch nicht vollständig produktionsreif. \nErwarten Sie <b>Fehler</b> und <b>fehlende Funktionen</b>.",
+  "landing": {
+    "ready": "Sind Sie bereit, mit der Verfolgung Ihrer Finanzen zu beginnen?",
+    "cta": "Starten Sie kostenlos durch",
+    "heading": "<a>Übernehmen Sie Ihre Finanzen mit Leichtigkeit</a> <b>Einfach</b>",
+    "subheading": "Behalten Sie den Überblick über Ausgaben, verwalten Sie Budgets und erreichen Sie Ihre finanziellen Ziele mühelos mit unserem All-in-One-Kosten-Tracker."
+  },
+  "features": {
+    "comprehensive": {
+      "description": "Behalten Sie alle Ihre Ausgaben an einem Ort im Auge. \nKategorisieren Sie Ihre Ausgaben, legen Sie Budgets fest und gewinnen Sie Einblicke in Ihre Finanzgewohnheiten.",
+      "title": "Umfassende Kostenverfolgung"
+    },
+    "detailed": {
+      "title": "Detaillierte Finanzstatistik",
+      "description": "Erhalten Sie detaillierte monatliche Zusammenfassungen Ihres Kontostands, Ihrer Einnahmen, Ausgaben, Investitionen und Ersparnisse. \nVisualisieren Sie Ihre finanzielle Gesundheit mit intuitiven Diagrammen und Grafiken."
+    },
+    "goal": {
+      "description": "Legen Sie mühelos Ihre Sparziele fest und erreichen Sie diese. \nVerfolgen Sie Ihre Fortschritte, automatisieren Sie Ihre Einsparungen und bleiben Sie mit personalisierten Tipps motiviert.",
+      "title": "Zielgerichtet sparen"
+    },
+    "customizable": {
+      "title": "Anpassbare Kategorien",
+      "description": "Erstellen und verwalten Sie benutzerdefinierte Kategorien für Ihre Transaktionen, um Ihre Finanzen besser zu organisieren."
+    },
+    "multi": {
+      "title": "Unterstützung mehrerer Währungen",
+      "description": "Verwalten Sie Transaktionen in mehreren Währungen und erhalten Sie genaue Umrechnungen für ein besseres Finanzmanagement."
+    },
+    "secure": {
+      "description": "Ihre Finanzdaten werden sicher gespeichert und verschlüsselt, um Ihre Privatsphäre und Sicherheit zu gewährleisten.",
+      "title": "Sichere Datenspeicherung"
+    }
+  }
 }

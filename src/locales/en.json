@@ -211,10 +211,37 @@
   "landing": {
     "heading": "<a>Take Charge of Your Finances with</a> <b>Ease</b>",
     "subheading": "Keep track of expenses, manage budgets, and achieve your financial goals effortlessly with our all-in-one expense tracker.",
-    "cta": "Get Started for free"
+    "cta": "Get Started for free",
+    "ready": "Ready to start tracking your finances?"
   },
   "login-continue": "Log in to your account to continue",
   "login-github": "Continue with GitHub",
   "warning": "Warning",
-  "warning-description": "This project is still being actively worked on and is not fully ready for production. Expect <b>bugs</b> and <b>missing features</b>."
+  "warning-description": "This project is still being actively worked on and is not fully ready for production. Expect <b>bugs</b> and <b>missing features</b>.",
+  "features": {
+    "comprehensive": {
+      "title": "Comprehensive Expense Tracking",
+      "description": "Keep track of all your expenses in one place. Categorize your spending, set budgets, and gain insights into your financial habits."
+    },
+    "detailed": {
+      "title": "Detailed Financial Statistics",
+      "description": "Get detailed monthly summaries of your balance, income, expenses, investments, and savings. Visualize your financial health with intuitive charts and graphs."
+    },
+    "goal": {
+      "title": "Goal-Oriented Savings",
+      "description": "Set and achieve your savings goals effortlessly. Track your progress, automate your savings, and stay motivated with personalized tips."
+    },
+    "customizable": {
+      "title": "Customizable Categories",
+      "description": "Create and manage custom categories for your transactions to organize your finances better."
+    },
+    "multi": {
+      "title": "Multi-Currency Support",
+      "description": "Handle transactions in multiple currencies and get accurate conversions for better financial management."
+    },
+    "secure": {
+      "title": "Secure Data Storage",
+      "description": "Your financial data is securely stored and encrypted to ensure your privacy and security."
+    }
+  }
 }

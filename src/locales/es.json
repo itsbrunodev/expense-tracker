@@ -91,5 +91,37 @@
   "login-continue": "Inicie sesión en su cuenta para continuar",
   "login-github": "Continuar con GitHub",
   "warning": "Advertencia",
-  "warning-description": "Este proyecto todavía se está trabajando activamente y no está completamente listo para su producción. \nEspere <b>errores</b> y <b>funciones faltantes</b>."
+  "warning-description": "Este proyecto todavía se está trabajando activamente y no está completamente listo para su producción. \nEspere <b>errores</b> y <b>funciones faltantes</b>.",
+  "landing": {
+    "ready": "¿Listo para comenzar a realizar un seguimiento de sus finanzas?",
+    "cta": "Comience gratis",
+    "heading": "<a>Hagase cargo de sus finanzas con</a> <b>facilidad</b>",
+    "subheading": "Realice un seguimiento de los gastos, administre presupuestos y alcance sus objetivos financieros sin esfuerzo con nuestro rastreador de gastos todo en uno."
+  },
+  "features": {
+    "comprehensive": {
+      "description": "Lleve un registro de todos sus gastos en un solo lugar. \nClasifique sus gastos, establezca presupuestos y obtenga información sobre sus hábitos financieros.",
+      "title": "Seguimiento integral de gastos"
+    },
+    "detailed": {
+      "title": "Estadísticas financieras detalladas",
+      "description": "Obtenga resúmenes mensuales detallados de su saldo, ingresos, gastos, inversiones y ahorros. \nVisualice su salud financiera con cuadros y gráficos intuitivos."
+    },
+    "goal": {
+      "description": "Establece y alcanza tus objetivos de ahorro sin esfuerzo. \nRealice un seguimiento de su progreso, automatice sus ahorros y manténgase motivado con consejos personalizados.",
+      "title": "Ahorros orientados a objetivos"
+    },
+    "customizable": {
+      "title": "Categorías personalizables",
+      "description": "Cree y administre categorías personalizadas para sus transacciones para organizar mejor sus finanzas."
+    },
+    "multi": {
+      "title": "Soporte multidivisa",
+      "description": "Maneje transacciones en múltiples monedas y obtenga conversiones precisas para una mejor gestión financiera."
+    },
+    "secure": {
+      "description": "Sus datos financieros se almacenan y encriptan de forma segura para garantizar su privacidad y seguridad.",
+      "title": "Almacenamiento seguro de datos"
+    }
+  }
 }

@@ -1,7 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { CircleFlag } from "react-circle-flags";
 
-import { locales as localesWithoutName } from "@/lib/constants";
+import { LOCALES as localesWithoutName } from "@/lib/constants";
 
 import {
   DropdownMenu,
@@ -23,7 +23,10 @@ export default function LocaleSwitcher() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="rounded-full" title={currentLocaleObj.name}>
+      <DropdownMenuTrigger
+        className="rounded-full"
+        title={currentLocaleObj.name}
+      >
         <CircleFlag className="size-5" countryCode={currentLocaleObj.flag} />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="min-w-40" align="end">

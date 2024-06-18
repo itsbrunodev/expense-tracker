@@ -211,10 +211,37 @@
   "landing": {
     "heading": "<a>Kezelje pénzügyeit a lehető</a> <b>legkönnyebben</b>",
     "subheading": "Kövesd nyomon a kiadásaidat, kezeld a költségvetésedet, és könnyedén érd el pénzügyi céljaid.",
-    "cta": "Vágj bele most ingyenesen"
+    "cta": "Vágj bele most ingyenesen",
+    "ready": "Készen állsz pénzügyeid nyomon követésére?"
   },
   "login-continue": "A folytatáshoz jelentkezzen be fiókjába",
   "login-github": "Folytassa a GitHubbal",
   "warning": "Figyelem",
-  "warning-description": "Ezen a projekten még aktívan dolgozunk, és még nem áll teljesen készen. \nSzámíthatsz <b>hibákra</b> és <b>hiányzó funkciókra</b>."
+  "warning-description": "Ezen a projekten még aktívan dolgozunk, és még nem áll teljesen készen. \nSzámíthatsz <b>hibákra</b> és <b>hiányzó funkciókra</b>.",
+  "features": {
+    "comprehensive": {
+      "description": "Kövesd nyomon az összes kiadást egy helyen. \nKategorizáld kiadásaid, állítsd be a költségvetést, és nyerj betekintést pénzügyi szokásaidba.",
+      "title": "Átfogó költségkövetés"
+    },
+    "detailed": {
+      "title": "Részletes pénzügyi statisztikák",
+      "description": "Részletes havi összefoglalókat kaphatsz egyenlegedről, bevételeidről, kiadásaidról, befektetéseidről és megtakarításaidról. \nNézd át pénzügyi helyzeted intuitív diagramokkal és grafikonokkal."
+    },
+    "goal": {
+      "description": "Tűzz ki és érd el megtakarítási céljaid könnyedén. \nKövesd nyomon előrehaladásod, automatizáld megtakarításaid, és maradj motivált személyre szabott tippek segítségével.",
+      "title": "Célorientált megtakarítások"
+    },
+    "customizable": {
+      "title": "Testreszabható kategóriák",
+      "description": "Hozz létre és kezelj egyedi kategóriákat tranzakcióihoz, hogy jobban megszervezhesd pénzügyeid."
+    },
+    "multi": {
+      "title": "Több pénznem támogatása",
+      "description": "Kezelj a tranzakciókat több pénznemben, és kapj pontos átváltást a jobb pénzgazdálkodás érdekében."
+    },
+    "secure": {
+      "description": "Pénzügyi adataid biztonságosan tároljuk és titkosítjuk a te adataidnak védelme és biztonsága érdekében.",
+      "title": "Biztonságos adattárolás"
+    }
+  }
 }
