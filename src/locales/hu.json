@@ -207,5 +207,14 @@
     "recurring": "Az ismétlődő számlák (például internet vagy biztosítás) áttekintése és újratárgyalása segíthet pénzt megtakarítani a havi kiadásokon.",
     "statements": "A pénzügyi kimutatások rendszeres áttekintése segíthet a hibák vagy a jogosulatlan tranzakciók korai felismerésében.",
     "tracking": "A kiadások nyomon követése segíthet azonosítani a kiadási szokásokat és azokat a területeket, ahol pénzt takaríthatsz meg."
-  }
+  },
+  "landing": {
+    "heading": "<a>Kezelje pénzügyeit a lehető</a> <b>legkönnyebben</b>",
+    "subheading": "Kövesd nyomon a kiadásaidat, kezeld a költségvetésedet, és könnyedén érd el pénzügyi céljaid.",
+    "cta": "Vágj bele most ingyenesen"
+  },
+  "login-continue": "A folytatáshoz jelentkezzen be fiókjába",
+  "login-github": "Folytassa a GitHubbal",
+  "warning": "Figyelem",
+  "warning-description": "Ezen a projekten még aktívan dolgozunk, és még nem áll teljesen készen. \nSzámíthatsz <b>hibákra</b> és <b>hiányzó funkciókra</b>."
 }

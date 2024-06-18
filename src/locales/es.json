@@ -87,5 +87,9 @@
     "recurring": "Revisar y renegociar tus facturas recurrentes, como Internet o seguros, puede ayudarte a ahorrar dinero en gastos mensuales.",
     "statements": "Revisar periódicamente sus estados financieros puede ayudarle a detectar con antelación cualquier error o transacción no autorizada.",
     "tracking": "El seguimiento de sus gastos puede ayudarle a identificar patrones de gastos y áreas en las que puede ahorrar dinero."
-  }
+  },
+  "login-continue": "Inicie sesión en su cuenta para continuar",
+  "login-github": "Continuar con GitHub",
+  "warning": "Advertencia",
+  "warning-description": "Este proyecto todavía se está trabajando activamente y no está completamente listo para su producción. \nEspere <b>errores</b> y <b>funciones faltantes</b>."
 }

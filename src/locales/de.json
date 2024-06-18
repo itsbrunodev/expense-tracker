@@ -87,5 +87,9 @@
     "recurring": "Durch die Überprüfung und Neuverhandlung Ihrer wiederkehrenden Rechnungen, beispielsweise für Internet oder Versicherungen, können Sie bei den monatlichen Ausgaben Geld sparen.",
     "statements": "Durch die regelmäßige Überprüfung Ihrer Finanzberichte können Sie Fehler oder nicht autorisierte Transaktionen frühzeitig erkennen.",
     "tracking": "Durch die Verfolgung Ihrer Ausgaben können Sie Ausgabemuster und Bereiche erkennen, in denen Sie Geld sparen können."
-  }
+  },
+  "login-continue": "Melden Sie sich bei Ihrem Konto an, um fortzufahren",
+  "login-github": "Fahren Sie mit GitHub fort",
+  "warning": "Warnung",
+  "warning-description": "An diesem Projekt wird noch aktiv gearbeitet und es ist noch nicht vollständig produktionsreif. \nErwarten Sie <b>Fehler</b> und <b>fehlende Funktionen</b>."
 }

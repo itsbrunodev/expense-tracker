@@ -1,31 +1,39 @@
 import { ArrowRightIcon } from "lucide-react";
+import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 
 import { Footer } from "@/components/footer";
 import { ShowcaseImage } from "@/components/landing/showcase-image";
 import { Navbar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
-export default function Page() {
+export default async function Page() {
+  const t = await getTranslations();
+
   return (
     <div className="h-full w-full">
-      <Navbar className="max-w-5xl mb-0" />
+      <Navbar className="mb-0 max-w-5xl" />
       <div className="mx-auto flex min-h-[475px] w-full max-w-5xl flex-col items-center justify-center gap-8 text-center">
         <h1 className="max-w-3xl text-5xl font-semibold leading-tight">
-          <span className="bg-gradient-to-b from-zinc-500 to-zinc-900 bg-clip-text text-transparent dark:from-white dark:to-zinc-300">
-            Take Charge of Your Finances with{" "}
-          </span>
-          <span className="bg-gradient-to-b from-green-500 to-green-700 bg-clip-text text-transparent dark:from-green-300 dark:to-green-600">
-            Ease
-          </span>
+          {t.rich("landing.heading", {
+            a: (text) => (
+              <span className="bg-gradient-to-b from-zinc-500 to-zinc-900 bg-clip-text text-transparent dark:from-white dark:to-zinc-300">
+                {text}
+              </span>
+            ),
+            b: (text) => (
+              <span className="bg-gradient-to-b from-green-500 to-green-700 bg-clip-text text-transparent dark:from-green-300 dark:to-green-600">
+                {text}
+              </span>
+            ),
+          })}
         </h1>
         <p className="max-w-xl text-lg leading-normal text-zinc-900 dark:text-zinc-50">
-          Keep track of expenses, manage budgets, and achieve your financial
-          goals effortlessly with our all-in-one expense tracker.
+          {t("landing.subheading")}
         </p>
         <Button className="h-fit px-4 py-2" asChild>
           <Link href="/login">
-            Get Started for free{" "}
+            {t('landing.cta')}{" "}
             <ArrowRightIcon
               className="my-auto ml-2 inline-block size-3.5"
               strokeWidth={2}

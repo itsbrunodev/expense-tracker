@@ -207,5 +207,14 @@
     "impulse": "Avoiding impulse purchases by waiting 24 hours before making a non-essential purchase can help you make more mindful spending decisions.",
     "recurring": "Reviewing and renegotiating your recurring bills, such as internet or insurance, can help you save money on monthly expenses.",
     "emergency": "Building an emergency fund with three to six months' worth of living expenses can provide financial security during unexpected events."
-  }
+  },
+  "landing": {
+    "heading": "<a>Take Charge of Your Finances with</a> <b>Ease</b>",
+    "subheading": "Keep track of expenses, manage budgets, and achieve your financial goals effortlessly with our all-in-one expense tracker.",
+    "cta": "Get Started for free"
+  },
+  "login-continue": "Log in to your account to continue",
+  "login-github": "Continue with GitHub",
+  "warning": "Warning",
+  "warning-description": "This project is still being actively worked on and is not fully ready for production. Expect <b>bugs</b> and <b>missing features</b> ."
 }
