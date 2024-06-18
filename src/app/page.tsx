@@ -14,7 +14,7 @@ export default async function Page() {
   return (
     <div className="h-full w-full">
       <Navbar className="mb-0 max-w-5xl" />
-      <div className="mx-auto flex min-h-[500px] w-full max-w-5xl flex-col items-center justify-center gap-8 text-center">
+      <div className="mx-auto flex min-h-[500px] w-full max-w-5xl flex-col items-center justify-center gap-8 px-4 text-center xl:px-0">
         <h1 className="max-w-3xl text-5xl font-semibold leading-tight">
           {t.rich("landing.heading", {
             a: (text) => (
@@ -34,7 +34,7 @@ export default async function Page() {
         </p>
         <Button className="h-fit px-4 py-2" asChild>
           <Link href="/login">
-            {t("landing.cta")}{" "}
+            {t("landing.cta")}
             <ArrowRightIcon
               className="my-auto ml-2 inline-block size-3.5"
               strokeWidth={2}
@@ -43,10 +43,10 @@ export default async function Page() {
         </Button>
       </div>
       <div className="flex flex-col gap-32 [&>*]:w-full">
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-5xl px-4 xl:px-0">
           <ShowcaseImage />
         </div>
-        <div className="mx-auto flex max-w-5xl flex-col gap-12">
+        <div className="mx-auto flex max-w-5xl flex-col gap-12 px-4 xl:px-0">
           <h2 className="text-center text-3xl font-medium">
             {t("landing.features")}
           </h2>
@@ -71,8 +71,8 @@ export default async function Page() {
             ))}
           </div>
         </div>
-        <div className="mx-auto max-w-5xl">
-          <div className="flex h-96 w-full flex-col items-center justify-center gap-6 rounded-2xl bg-gradient-to-b from-green-400 to-green-600 text-center dark:from-green-700 dark:to-green-900">
+        <div className="mx-auto max-w-5xl px-4 xl:px-0">
+          <div className="flex h-96 w-full flex-col items-center justify-center gap-6 rounded-2xl bg-gradient-to-b from-green-400 to-green-700 text-center dark:from-green-600 dark:to-green-950">
             <h1 className="text-4xl font-bold">{t("landing.ready")}</h1>
             <div className="flex max-w-[550px] flex-col items-center justify-center gap-3">
               <p className="text-lg text-zinc-800 dark:text-zinc-50">
@@ -80,7 +80,7 @@ export default async function Page() {
               </p>
               <Button className="h-fit px-4 py-2" asChild>
                 <Link href="/login">
-                  {t("landing.cta")}{" "}
+                  {t("landing.cta")}
                   <ArrowRightIcon
                     className="my-auto ml-2 inline-block size-3.5"
                     strokeWidth={2}
