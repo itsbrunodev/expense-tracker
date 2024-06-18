@@ -42,13 +42,13 @@ export default async function Page() {
           </Link>
         </Button>
       </div>
-      <div className="flex [&>*]:w-full flex-col gap-32">
+      <div className="flex flex-col gap-32 [&>*]:w-full">
         <div className="mx-auto max-w-5xl">
           <ShowcaseImage />
         </div>
         <div className="mx-auto flex max-w-5xl flex-col gap-12">
           <h2 className="text-center text-3xl font-medium">
-            Everything you need for your financial journey
+            {t("landing.features")}
           </h2>
           <div className="grid grid-cols-3 gap-12">
             {FEATURES.map((feature, i) => (
