@@ -216,5 +216,5 @@
   "login-continue": "Log in to your account to continue",
   "login-github": "Continue with GitHub",
   "warning": "Warning",
-  "warning-description": "This project is still being actively worked on and is not fully ready for production. Expect <b>bugs</b> and <b>missing features</b> ."
+  "warning-description": "This project is still being actively worked on and is not fully ready for production. Expect <b>bugs</b> and <b>missing features</b>."
 }
