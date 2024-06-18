@@ -69,7 +69,7 @@ export default async function Page() {
         </div>
       </div>
       <div className="mx-auto mt-24 max-w-5xl">
-        <div className="flex h-72 w-full flex-col items-center justify-center gap-6 rounded-2xl bg-gradient-to-b from-green-400 to-green-600 text-center dark:from-green-700 dark:to-green-900">
+        <div className="flex h-96 w-full flex-col items-center justify-center gap-6 rounded-2xl bg-gradient-to-b from-green-400 to-green-600 text-center dark:from-green-700 dark:to-green-900">
           <h1 className="text-4xl font-bold">{t("landing.ready")}</h1>
           <div className="flex max-w-[550px] flex-col items-center justify-center gap-3">
             <p className="text-lg text-zinc-800 dark:text-zinc-50">
