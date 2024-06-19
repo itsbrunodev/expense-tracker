@@ -2,7 +2,7 @@
 
 import { parse } from "date-fns";
 import { ChevronDownIcon } from "lucide-react";
-import { useFormatter } from "next-intl";
+import { useFormatter, useTimeZone } from "next-intl";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Fragment, useCallback } from "react";
 
@@ -70,6 +70,8 @@ export function MonthSelect({ months }: { months: MonthYear[] }) {
 
   // Get locale formatter.
   const localeFormat = useFormatter();
+  // Get timezone.
+  const timeZone = useTimeZone();
 
   /**
    * Update search params with the new timeframe value.
@@ -102,7 +104,7 @@ export function MonthSelect({ months }: { months: MonthYear[] }) {
                       : `${currentTimeframe.year}-${currentTimeframe.month}-01`
                   }`
                 ),
-                { month: "long" }
+                { month: "long", timeZone }
               )
             )}
           </p>
@@ -115,7 +117,7 @@ export function MonthSelect({ months }: { months: MonthYear[] }) {
                     : `${currentTimeframe.year}-${currentTimeframe.month}-01`
                 }`
               ),
-              { year: "numeric" }
+              { year: "numeric", timeZone }
             )}
           </p>
         </div>
@@ -146,6 +148,7 @@ export function MonthSelect({ months }: { months: MonthYear[] }) {
                     {/* Display the year */}
                     {localeFormat.dateTime(new Date(`${year}-01-01`), {
                       year: "numeric",
+                      timeZone,
                     })}
                   </DropdownMenuLabel>
                   {groupedDates[year].map((m, i) => (
@@ -158,9 +161,7 @@ export function MonthSelect({ months }: { months: MonthYear[] }) {
                       {capitalizeFirstLetter(
                         localeFormat.dateTime(
                           new Date(`${year}-${m.month}-01`),
-                          {
-                            month: "long",
-                          }
+                          { month: "long", timeZone }
                         )
                       )}
                       {year}, {m.month}
