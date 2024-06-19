@@ -34,7 +34,7 @@ export function TransactionDetails({
 }) {
   const locale = useLocale();
   const t = useTranslations();
-  const formatter = useFormatter();
+  const localeFormatter = useFormatter();
 
   return (
     <Credenza>
@@ -123,12 +123,12 @@ export function TransactionDetails({
               {t("transaction-date")}
             </span>
             <p>
-              {formatter.dateTime(new Date(transaction.transaction_date), {
+              {localeFormatter.dateTime(new Date(transaction.transaction_date), {
                 year: "numeric",
                 month: "short",
                 day: "numeric",
               })}{" "}
-              ({formatter.relativeTime(new Date(transaction.transaction_date))})
+              ({localeFormatter.relativeTime(new Date(transaction.transaction_date))})
             </p>
           </div>
           <div>
@@ -152,12 +152,12 @@ export function TransactionDetails({
               {t("created-at")}
             </span>
             <p>
-              {formatter.dateTime(new Date(transaction.created_at), {
+              {localeFormatter.dateTime(new Date(transaction.created_at), {
                 year: "numeric",
                 month: "short",
                 day: "numeric",
               })}{" "}
-              ({formatter.relativeTime(new Date(transaction.created_at))})
+              ({localeFormatter.relativeTime(new Date(transaction.created_at))})
             </p>
           </div>
           <div>
@@ -165,12 +165,12 @@ export function TransactionDetails({
               {t("updated-at")}
             </span>
             <p>
-              {formatter.dateTime(new Date(transaction.updated_at), {
+              {localeFormatter.dateTime(new Date(transaction.updated_at), {
                 year: "numeric",
                 month: "short",
                 day: "numeric",
               })}{" "}
-              ({formatter.relativeTime(new Date(transaction.updated_at))})
+              ({localeFormatter.relativeTime(new Date(transaction.updated_at))})
             </p>
           </div>
         </CredenzaBody>
