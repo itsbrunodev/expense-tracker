@@ -59,8 +59,7 @@ export function TransactionDetails({
               {t("description")}
             </span>
             <p className="max-h-[4.5rem] min-h-[4.5rem] select-all overflow-y-auto break-all rounded-md bg-zinc-50 px-3 py-2 dark:bg-zinc-800 md:max-h-full">
-              {"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut." ||
-                t("description-not-found")}
+              {t("description-not-found")}
             </p>
           </div>
           <div>
