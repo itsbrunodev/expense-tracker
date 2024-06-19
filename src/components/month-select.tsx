@@ -156,10 +156,14 @@ export function MonthSelect({ months }: { months: MonthYear[] }) {
                     >
                       {/* Display the month */}
                       {capitalizeFirstLetter(
-                        localeFormat.dateTime(new Date(`2000-${m.month}-01`), {
-                          month: "long",
-                        })
+                        localeFormat.dateTime(
+                          new Date(`${year}-${m.month}-01`),
+                          {
+                            month: "long",
+                          }
+                        )
                       )}
+                      {year}, {m.month}
                     </DropdownMenuRadioItem>
                   ))}
                   {/* Add a separator between years */}
