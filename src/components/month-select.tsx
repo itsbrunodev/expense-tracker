@@ -84,6 +84,8 @@ export function MonthSelect({ months }: { months: MonthYear[] }) {
     [push]
   );
 
+  console.log(timeframeSelected, currentTimeframe, groupedDates);
+
   return (
     <DropdownMenu>
       {/* Trigger for the dropdown menu */}
