@@ -104,9 +104,7 @@ export default async function Page({
         />
       </div>
       {/* Monthly summary */}
-      <div className="grid w-full grid-cols-4 gap-20">
-        <MonthlySummary {...summary} currency={settings.currency} />
-      </div>
+      <MonthlySummary {...summary} currency={settings.currency} />
       {/* Transactions */}
       <div className="flex flex-col gap-6">
         <div className="flex items-center justify-between">

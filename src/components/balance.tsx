@@ -112,7 +112,7 @@ export function Balance({
   };
 
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex sm:flex-row flex-col sm:gap-0 gap-4 sm:items-center items-start justify-between">
       <div className="flex flex-col">
         <p className="text-zinc-900 dark:text-zinc-50">{t("net-total")}</p>
         <p
@@ -141,7 +141,7 @@ export function Balance({
           </span>
         </p>
       </div>
-      <div className="flex h-2 w-1/2 gap-0.5 overflow-hidden rounded-full">
+      <div className="flex h-2 sm:w-1/2 w-full gap-0.5 overflow-hidden rounded-full">
         {total === 0 ? (
           <span className="w-full bg-zinc-100 dark:bg-zinc-800" />
         ) : (

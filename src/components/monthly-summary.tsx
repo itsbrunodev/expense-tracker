@@ -65,7 +65,7 @@ export function MonthlySummary({
   };
 
   return (
-    <>
+    <div className="grid w-full lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-20 gap-8">
       <div
         className="flex flex-col gap-2"
         onMouseEnter={() => setHoveredStatistic("income")}
@@ -162,7 +162,7 @@ export function MonthlySummary({
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

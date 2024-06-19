@@ -18,7 +18,7 @@ export default async function Loading() {
           whileHover={undefined}
           transition={{ repeat: Infinity, duration: 3 }}
         />
-        <div className="flex max-w-96 flex-col gap-2">
+        <div className="flex max-w-96 flex-col gap-2 md:px-0 px-4">
           <h1 className="text-xs font-bold text-zinc-800 dark:text-zinc-100">
             {t(randomTip.type).toUpperCase()}
           </h1>
